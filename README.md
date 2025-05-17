@@ -1,5 +1,9 @@
 
 # EX-01-Datatypes-Operators
+~~~
+NAME: B. DHANUSH KUMAR
+REG NO: 212224240034
+~~~
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
 
@@ -10,27 +14,26 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
-
+~~~.c
+#include <stdio.h>
+int main() {
+    char ch1, ch2, ch3;
+	printf("Enter three characters: ");
+    scanf("%c", &ch1);  
+    getchar(); 
+    scanf("%c", &ch2);  
+    getchar();  
+    scanf("%c", &ch3);  
+    printf("Characters in reverse order: %c %c %c\n", ch3, ch2, ch1);
+    return 0;
+}
+~~~
 ## OUTPUT:
 
+![437887820-8abdcff7-716c-4b3b-b041-d0e675dc1b86](https://github.com/user-attachments/assets/19ceb810-6e1c-421f-b60c-a284693d5700)
 
+## RESULT: Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## RESULT:
-Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
 
 
 # EX-02- Conditional-Statements
@@ -46,17 +49,29 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
+~~~.c
+
+#include<stdio.h>
+int main ()
+{
+    int n;
+    scanf("%d",&n);
+    if(n>=0)
+    {
+        printf("Number is positive.");
+    }
+    else
+    {
+        printf("Number is negative.");
+    }
+    return 0;
+    
+}
+~~~
 
 # OUTPUT:
 
-
-
-
-
-
-
-
-
+![437888109-151b1934-91eb-4dd5-9a8b-48b858eae8d0](https://github.com/user-attachments/assets/acb66484-f0eb-4f3e-aa15-4099cf7100d6)
 
 
 # RESULT:
@@ -64,7 +79,6 @@ Thus the program to read A values and check whether A is positive number or not 
  
  
  
-
 
 # EX-03- Operators-Expressions
 ## AIM:
@@ -80,15 +94,25 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+~~~.c
+#include <stdio.h>
+
+int main() {
+    float num1, num2, min;
+
+    printf("Enter two fractional numbers: ");
+    scanf("%f %f", &num1, &num2);
+
+    min = (num1 < num2) ? num1 : num2;
+
+    printf("Minimum of %.2f and %.2f is %.2f\n", num1, num2, min);
+
+    return 0;
+}
+~~~
 
 ## OUTPUT:
-
-
-
-
-
-
-
+![437888301-fb6a2acb-37a3-4717-b9ab-08c96176aaf4](https://github.com/user-attachments/assets/a9e8c960-0dd0-4d5e-ad9e-7d9e5f58242c)
 
 
 ## RESULT:
@@ -111,16 +135,30 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+```.c
+#include <stdio.h>
+
+int main() {
+    int value;
+    printf("Enter a value: ");
+    scanf("%d", &value);
+	if (value == 1) {
+        printf("The value is equal to 1.\n");
+    }
+    else
+    {
+    	printf("The value is not equal to 1.\n");
+	}
+
+    return 0;
+}
+```
 
 ## OUTPUT:
 
+![437888333-7526bee2-ddd7-4513-a0e3-99d375d7a6fb](https://github.com/user-attachments/assets/b97cb13b-1e17-4475-8626-142b07fbeaeb)
 
-
-
-
-
-
-
+![437888341-2d022e24-5a9b-484f-84ab-6fa828dfa3cb](https://github.com/user-attachments/assets/c4ac98fa-75f0-49c1-b41b-86f439b2d1d8)
 
 	
 
@@ -147,8 +185,39 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+```.c
+#include <stdio.h>
+int main()  
+{
+    int n;
+    scanf("%d",&n);
+    if(n>=70 && n<=100)
+    {
+        printf("...FIRST CLASS WITH DISTINCTION...");
+    }
+    else if(n>=60 && n<70)
+    {
+        printf("...FIRST CLASS...");
+    }
+    else if(n>=50 && n<60)
+    {
+        printf("...SECOND CLASS...");
+    }
+    else if(n>=40 && n<50)
+    {
+        printf("...THIRD CLASS...");
+    }
+    else
+    {
+        printf("...U r Failed...Better luck next time");
+    }
+    return 0;
+}
+```
 
 ## OUTPUT:
+
+![437888435-70562b39-e69a-4526-8ea3-3c96d4ce73f8](https://github.com/user-attachments/assets/6d1f9734-d1bd-49e5-be3c-8c3b2da05400)
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
